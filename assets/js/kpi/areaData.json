@@ -1,0 +1,220 @@
+
+{
+  "area": [
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート ニュー札幌"
+    },
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート プラザ新宿"
+    },
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 新橋"
+    },
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 有明"
+    },
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 新潟"
+    },
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 広島"
+    },
+    {
+      "area_name": "本部直轄店",
+      "chain_brand": "サンルート",
+      "hotel_name": "東京グリーンパレス"
+    },
+    {
+      "area_name": "中央東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 浜松町大門"
+    },
+    {
+      "area_name": "中央東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京京橋"
+    },
+    {
+      "area_name": "中央東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 新橋日比谷口"
+    },
+    {
+      "area_name": "中央東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 銀座七丁目"
+    },
+    {
+      "area_name": "中央東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 銀座三丁目"
+    },
+    {
+      "area_name": "南東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京田町"
+    },
+    {
+      "area_name": "南東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京赤坂"
+    },
+    {
+      "area_name": "南東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 川崎駅東口"
+    },
+    {
+      "area_name": "南東京エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 品川シーサイド"
+    },
+    {
+      "area_name": "南東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京蒲田"
+    },
+    {
+      "area_name": "南東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京六本木"
+    },
+    {
+      "area_name": "西東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 御茶ノ水神保町"
+    },
+    {
+      "area_name": "西東京エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 東新宿"
+    },
+    {
+      "area_name": "西東京エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "フォーレスト本郷"
+    },
+    {
+      "area_name": "西東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 上野御徒町"
+    },
+    {
+      "area_name": "西東京エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京神田"
+    },
+    {
+      "area_name": "東東京・千葉エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 千葉柏"
+    },
+    {
+      "area_name": "東東京・千葉エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 日本橋茅場町"
+    },
+    {
+      "area_name": "東東京・千葉エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京東陽町駅前"
+    },
+    {
+      "area_name": "東東京・千葉エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 日本橋人形町"
+    },
+    {
+      "area_name": "東東京・千葉エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 東京錦糸町"
+    },
+    {
+      "area_name": "神奈川エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 鎌倉大船"
+    },
+    {
+      "area_name": "神奈川エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 藤沢湘南台"
+    },
+    {
+      "area_name": "神奈川エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 横浜戸塚"
+    },
+    {
+      "area_name": "神奈川エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 藤沢駅南口"
+    },
+    {
+      "area_name": "神奈川エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 横浜桜木町"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 京都四条烏丸"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 京都駅八条口"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 大阪なんば"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 大阪淀屋橋"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 大阪心斎橋"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "フレッサイン",
+      "hotel_name": "相鉄フレッサイン 神戸三宮"
+    },
+    {
+      "area_name": "近畿エリア",
+      "chain_brand": "ポケットホテル",
+      "hotel_name": "ポケットホテル 京都四条烏丸"
+    },
+    {
+      "area_name": "長野エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 長野"
+    },
+    {
+      "area_name": "長野エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 長野東口"
+    },
+    {
+      "area_name": "長野エリア",
+      "chain_brand": "サンルート",
+      "hotel_name": "サンルート 上田"
+    }
+  ]
+}

@@ -1,0 +1,1827 @@
+//variables
+gray = #f5f5f5
+light-gray = #fafafa
+color-primary = #03a9f4
+ggs-font-family = 'Google Sans'
+color-active = #1967d2
+//mix
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+//color
+.color-active
+ background-color color-active
+.bg-gray
+ background-color gray!important
+.bg-light-gray
+ background-color light-gray!important
+.border-bot-light
+ border-bottom:1px solid rgba(151,151,151,.20)
+.v-window-x-transition-enter
+.v-window-x-transition-enter-active
+.v-window-x-reverse-transition-enter
+.v-window-x-reverse-transition-enter-active
+.v-window-y-transition-enter
+.v-window-y-transition-enter-active
+.v-window-y-reverse-transition-enter
+.v-window-y-reverse-transition-enter-active
+ transform:none;
+ animation-name: fadeIn;
+ animation-fill-mode: both;
+ animation-duration: 2s;
+ animation-delay: 0s !important
+.v-window-x-transition-leave-to
+.v-window-x-transition-leave-to-active
+.v-window-x-reverse-transition-leave-to-active
+.v-window-x-reverse-transition-leave-to
+.v-window-y-transition-leave-to
+.v-window-y-transition-leave-to-active
+.v-window-y-reverse-transition-leave-to
+.v-window-y-reverse-transition-leave-to-active
+ transform:none;
+ animation-name: fadeOut;
+ animation-fill-mode: both;
+ animation-duration: .3s;
+ animation-delay: 0s !important
+.animated
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+.animate-no-delay
+  animation-delay: 0s !important;
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.fadeIn
+ -webkit-animation-name: fadeIn;
+ animation-name: fadeIn;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@keyframes rotate {
+ 100% {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+ }
+}
+@keyframes dash {
+ 0% {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+ }
+ 50% {
+  stroke-dasharray: 89, 200;
+  stroke-dashoffset: -35px;
+ }
+ 100% {
+  stroke-dasharray: 89, 200;
+  stroke-dashoffset: -124px;
+ }
+}
+@keyframes color {
+ 100%,
+ 0% {
+  stroke: #d62d20;
+ }
+ 40% {
+  stroke: #0057e7;
+ }
+ 66% {
+  stroke: #008744;
+ }
+ 80%,
+ 90% {
+  stroke: #ffa700;
+ }
+}
+.pos-relative
+ position relative
+.ld-showbox
+ top: 0
+ bottom: 0
+ left: 0
+ right: 0
+ padding: 5%
+ position: absolute;
+ background-color: #FFF;
+ z-index: 2;
+ .loader
+  position: relative
+  margin: 0 auto
+  width: 100px
+  height 100px
+  &:before
+   content: ''
+   display: block
+   padding-top: 100%
+  .circular
+   animation: rotate 2s linear infinite
+   height: 100%
+   transform-origin: center center;
+   width: 100%
+   position: absolute
+   top: 0
+   bottom: 0
+   left: 0
+   right: 0
+   margin: auto
+   .path
+    stroke-dasharray: 1, 200
+    stroke-dashoffset: 0
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite
+    stroke-linecap: round
+// .show-chart + .ld-showbox
+//  display none
+.theme--light
+ .bright-color.v-toolbar
+  background-color: #fff
+  color: rgba(0, 0, 0, .87)
+  box-shadow: none
+.application
+ font-family: ggs-font-family,Roboto,sans-serif
+ &.theme--light
+  background-color: #fafafa
+  color: rgba(0, 0, 0, .87)
+  box-shadow: none
+  .v-navigation-drawer
+  .v-toolbar
+   background-color: #fafafa
+  .v-navigation-drawer__border
+   background-color transparent !important
+ .display-4
+ .display-3
+ .display-2
+ .display-1
+ .headline
+ .title
+  font-family: ggs-font-family,Roboto,sans-serif !important
+ .v-menu__content
+  box-shadow 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12)
+.v-toolbar
+ &.mate2
+  box-shadow inset 0 -1px 0 rgba(100,121,143,0.122)
+  .v-toolbar__content
+   padding 8px 16px 8px 8px
+   .v-toolbar__side-icon
+    margin 0 4px
+    width 48px
+    height 48px
+    i
+     color black
+     opacity .54
+  .v-btn--icon
+   i
+    color black
+    opacity .54
+  .v-toolbar__title
+   color #333
+main
+ section
+  &:before
+   content: ''
+   display: block
+   position: relative
+   width: 0
+   height: 80px
+   margin-top: -80px
+.container
+ &.fullwidth
+  max-width 100% !important
+  width 100% !important
+ &.page
+  max-width: 1185px !important
+  padding: 75px 24px 0
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+.v-btn
+ .v-icon--right
+  margin-left: 10px
+.v-btn
+ &.btn-a1
+  position:relative
+  padding:0 24px
+  span
+   display: inline-block
+   position: relative
+   transition: all 300ms ease-out
+   will-change: transform
+   i
+    position: absolute;
+    width: 1.1em;
+    right: 0px;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    -webkit-transition: all 300ms ease-out
+    -o-transition: all 300ms ease-out
+    transition: all 300ms ease-out
+    will-change: right, opacity
+    margin-left:0
+  &:hover
+   span
+    -webkit-transform: translate3d(-1rem, 0, 0)
+    transform: translate3d(-1rem, 0, 0)
+    i
+     opacity: 1
+     right: -2rem
+  .v-btn__loading
+   position: absolute
+   top: 6px
+ &.lg-on-t
+  &:before
+   background-color transparent
+ &.avt-exp
+  border 1px solid rgba(0,0,0,.12)
+  transition: all 300ms ease-out
+  &:hover
+   box-shadow 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)
+.lv1p
+ .page-w-bg
+  background-size: cover !important
+  background: no-repeat #3b78e7 left bottom
+  .f-1sm
+   position:relative
+   .page-footer
+    position: absolute
+    bottom: -35px
+    right: 0px
+    a
+     color: #555
+     padding: 4px 10px
+     background-color: rgba(256,256,256,1)
+     text-decoration: none
+     border-radius: 2px
+     display:flex
+     i
+      height:24px
+      margin-right:5px
+     &:hover
+      color:#333
+  .f-2sm
+   max-width:860px
+   height:auto
+   padding:40px 12px
+   position:relative
+   .page-footer
+    position: absolute
+    bottom: 4px
+    right: 12px
+    a
+     color: #555
+     padding: 4px 10px
+     background-color: rgba(256,256,256,1)
+     text-decoration: none
+     border-radius: 2px
+     display:flex
+     i
+      height:24px
+      margin-right:5px
+     &:hover
+      color:#333
+   &.center-box
+    margin:0 auto
+   > .v-card
+    flex-grow: 0
+    max-width: 50%
+    flex-basis: 50%
+    flex:1
+    padding:32px
+    &:first-child
+     padding:32px 50px
+     border-top-right-radius: 0
+     border-bottom-right-radius: 0
+     background-color:#03A9F4
+     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12)
+     z-index: 2
+     position:relative
+     overflow:hidden
+     .layout
+      z-index:2
+      position:relative
+     .bot-dc
+      position: absolute
+      bottom: -150px
+      right: -35px
+      opacity: .2
+      z-index:1
+      i
+       font-size:360px
+    &:last-child
+     box-shadow:0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+     border-top-left-radius: 0
+     border-bottom-left-radius: 0
+    .header-box
+     padding:0
+    .ctn-l
+     .line1
+      display: flex
+      position: relative
+      align-items: center
+      margin-bottom: 20px
+      justify-content: flex-start
+      img
+       width:32px
+      h3
+       color: rgba(256, 256, 256, 0.99)
+       margin: 0
+       font-size: 18px
+       font-weight: 600
+       padding-left: 10px
+     h1
+      color: rgba(256, 256, 256, 0.90)
+      font-size: 2.8125rem
+      font-weight: 300
+      line-height: 1.13333em
+      margin-left: -.02em
+     h2
+      color: rgba(256, 256, 256, 0.99)
+      margin-top: 10px
+      font-size: 1.3125rem
+      font-weight: 400
+      line-height: 1.16667em
+    .ftfbg
+     background-color:#f5f5f5
+     padding:5px
+     a
+      padding-left:5px
+      padding-right:5px
+      font-weight:500
+      &:hover
+       text-decoration:underline
+    &.big-box
+     max-width: 70%
+     flex-basis: 70%
+     padding-top: 70px
+     padding-bottom: 80px
+     border-radius: 2px
+    &.full-box
+     max-width: 100%
+     flex-basis: 100%
+     padding:50px 40px 80px
+     border-radius: 2px
+     .ctn-l
+      text-align:center
+      width:100%
+      .line1
+       justify-content: center
+.log-alert
+ border-radius:2px
+.a-link
+ label
+  cursor:pointer
+.v-toolbar
+ &.top-mn-profile
+  .v-list__tile
+   padding-left:30px
+.list-gre-page
+ padding:0
+ .v-list__tile
+  height:auto
+  margin-bottom:10px
+  padding-left: 0
+  padding-right: 0
+  align-items: flex-start
+  .v-list__tile__action
+   min-width: 40px;
+   i
+    color: color-primary
+  .v-list__tile__title
+   font-weight:500
+   text-transform: capitalize
+.card-form-center
+ padding:40px
+ .header-box
+  padding:24px 0 16px 0
+  .logo
+   color: color-primary
+   font-weight:bold
+   font-size:28px
+   padding-bottom:10px
+  .headline
+   font-weight:bold
+  .subheading
+   color:#777
+ a
+  text-decoration: none
+  padding-top: 5px
+  padding-bottom: 5px
+ .v-text-field
+  .v-label
+   font-weight:400
+   color:#757575
+ .v-card__text
+  padding:16px 0
+ .v-card__actions
+  padding:16px 0 24px
+ &.confirm-box
+  .v-card__text
+   .v-input__slot
+    input
+     color:#555555
+ .flex
+  .v-input
+   margin-top:24px
+   margin-bottom:24px
+ &.card-sm
+  padding:10px 30px
+  @media (max-width: 768px)
+   padding:10px
+  .v-card__actions
+   padding-top:0
+.container
+&.full-content
+ padding:0
+.full-content
+ .inside
+  .page-header
+   padding 4px 8px
+   margin 0
+   overflow hidden
+   font-weight 500
+   color #616161
+   text-overflow ellipsis
+   cursor default
+   height 54px
+   flex-shrink 0
+   display flex
+   box-sizing border-box
+   width 100%
+   flex-direction row
+   align-items center
+   white-space nowrap
+   font-size 18px
+   border-bottom 1px solid #e8eaed
+   @media (max-width: 414px)
+    white-space normal
+  .page-content
+   padding-right 64px
+   @media (max-width: 768px)
+    padding-right 8px
+    padding-left 8px
+   .section-ctn
+    padding-left: 8px
+    padding-right: 8px
+    &:last-child
+     padding-bottom:140px
+    @media (max-width: 768px)
+     padding-left: 0
+     padding-right: 0
+    h3.title-block
+     font-size: 36px
+     padding-top: 64px
+     line-height: 42px
+     color: rgba(0,0,0,0.87)
+     font-weight: 400
+     margin-top: 0
+     margin-bottom: 0
+     box-sizing: border-box
+     margin-left: 0
+     margin-right: auto
+     max-width: 1000px
+    .sec-ctn-ins
+     box-sizing: border-box
+     margin-left: 0
+     margin-right: auto
+     margin-top:32px
+     max-width: 1000px
+     display:flex
+     border-bottom:1px solid rgba(0,0,0,0.12)
+     padding-bottom:40px
+     @media (max-width :768px)
+      display block
+     .c-l
+      width: 400px;
+      padding-right: 40px;
+      box-sizing: border-box
+      @media (max-width :768px)
+       width: 100%
+       margin-bottom: 24px
+      >div
+       color: rgba(0,0,0,0.65);
+       font-size: 17px;
+       font-weight: 400;
+       line-height: 24px;
+     .c-r
+      box-flex:1
+      flex-grow: 1;
+      @media (max-width :768px)
+       width 100%
+      .l-ctn
+       min-width 520px
+       max-width 600px
+       margin-left auto
+       margin-right auto
+       @media (max-width :768px)
+        max-width 100%
+        min-width 300px
+       .v-card
+        margin-bottom: 40px;
+       .v-list
+        &.l-items
+         padding:0
+        .item
+         .v-list__tile
+          padding:0
+          height:auto
+          .a-link
+           display: flex
+           width: 100%
+           color: #555
+           text-decoration: none
+           padding:24px
+           .v-list__tile__action
+            width:200px
+            min-width:220px
+            label
+             border: 0
+             color: #181818
+             font-size: 17px
+             font-weight: normal
+             margin: 0
+             padding: 0
+             width:200px
+            &:last-child
+             width:30px
+             min-width:30px
+           .v-list__tile__content
+            div
+             color: rgba(0,0,0,0.75);
+             font-size: 15px;
+             font-weight: 400;
+            .sml
+             display: block
+             font-style: normal
+             overflow: visible
+             white-space: normal
+             font-size: 13px
+             color: rgba(0,0,0,.65)
+             font-weight: 400
+         &.head-box
+          display:block
+          .v-list__tile
+           display: flex
+           width: 100%
+           text-decoration: none
+           padding:24px
+           .v-list__tile__sub-title
+            margin-top:10px
+.v-list
+ .single-line
+  .v-list__tile
+   padding-left 0
+   padding-right 0
+   line-height 48px
+   height 48px
+   .link-item
+    .v-list__tile__action
+     padding-left 26px
+     padding-right 16px
+     .v-icon
+      color rgba(0,0,0,0.54)
+    .v-list__tile__title
+     font-size 16px
+     color rgba(0,0,0,0.87)
+    &.nuxt-link-active
+     .v-list__tile__action
+      .v-icon
+       color inherit
+     .v-list__tile__title
+      color inherit
+aside
+ .mn-profile-l
+  padding-top:0
+  padding-bottom:0
+  padding-right 24px
+  .link-item
+   display:flex
+   width:100%
+   height:100%
+   text-decoration:none
+   border-top-right-radius 30px
+   border-bottom-right-radius 30px
+   &:hover
+    background-color rgba(242,245,245,0.9)
+   &:focus
+    background-color rgba(242,245,245,0.9)
+  .parent-node
+   .v-list__tile
+    padding:0
+    height:48px
+    .link-item
+     padding:0 16px
+     color:rgba(0,0,0,0.87)
+     font-size:16px
+     &.nuxt-link-exact-active
+      i
+       color color-active
+     &.active
+      color:color-primary
+      i
+       color:color-primary
+     .v-list__tile__action
+      padding-left: 10px
+      min-width:40px
+      padding-right 16px
+  .sub-node
+   font-size:14px
+   .v-list__tile
+    padding:0
+    height:40px
+    .link-item
+     padding:0 16px 0 66px
+     color:rgba(0,0,0,0.65)
+     &.nuxt-link-active
+      color #1967d2
+      background-color #e8f0fe
+.el-t-default
+ padding-top:20px
+ .box-search
+  margin-bottom:10px
+  width: w = 100%
+  > label
+   font-weight:400
+   font-size:16px
+   display:block
+   padding-top:5px
+   padding-bottom:5px
+  .v-input
+   width: (w / 2)
+   .v-input__slot
+    border: 1px solid rgba(0,0,0,.25);
+    box-shadow: none;
+    border-radius: 2px;
+ .v-alert
+  margin-top:20px
+  margin-bottom:20px
+ .box-filter
+  display:block
+  .v-menu
+   display inline-block
+   .btn-sl-date
+    text-transform initial
+    transition all 300ms ease-out
+    border-color #ccc
+    &:hover
+     box-shadow 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)
+     border-color transparent
+     background-color transparent
+    &:before
+     display none
+  .lbl-ft
+   font-weight:500
+   font-size:16px
+   display:block
+   padding-top:5px
+   padding-bottom:5px
+   position relative
+   &:before
+    position absolute
+    content ''
+    background-color color-active
+    width 2px
+    left -30px
+    top 2px
+    height 30px
+  .v-input
+   .v-input__slot
+    border-radius: 30px
+    padding: 2px 10px 3px 46px
+    box-shadow: none
+    border: 1px solid rgba(0,0,0,.12)
+    transition: all 300ms ease-out
+    &:hover
+     box-shadow 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)
+     border-color transparent
+    &:before
+    &:after
+     display none
+  .inside-flex
+   display:flex
+   width: w = 100%
+   margin-bottom: 15px;
+   .fil-itm-col
+    .v-btn
+     height 39px
+     margin-top 0
+    .v-input
+     &.v-input--checkbox
+      vertical-align top
+    width: 100%
+    background-color:#FFF
+    box-sizing:border-box
+    padding:0 5px
+    &:first-child
+     padding:0 10px 0 0
+    &:last-child
+     padding:0 0 0 10px
+   &.div-4
+    .fil-itm-col
+     width: (w / 4)
+    .ip-chose-date
+     .v-input__prepend-outer
+      position:absolute
+      z-index:2
+      left:8px
+      top:2px
+     .v-input__slot
+      padding-left:40px
+   &.div-160
+    .fil-itm-col
+     padding-left:0
+     width:160px
+     .sw-reverse
+      margin-top:12px
+      margin-bottom:12px
+      &.v-input
+       .v-input__slot
+        border:none
+        height: 24px
+        line-height: 24px
+        .v-input--selection-controls__input
+         position:absolute
+         right:0
+  .f-action
+   button
+    margin: 7px 0 0
+ .table-default
+  border:1px solid rgba(0,0,0,.12)
+  .v-table
+   thead
+    th
+     background-color:#F8FAFC
+  .st-col
+   .v-tooltip
+    display:inline-flex
+    align-items:center
+  .v-datatable__expand-row
+   .v-datatable__expand-content
+    .v-card__text
+     padding:10px 24px
+.vue-tel-input
+ &.select-phone-ctry
+  position:relative
+  border:none !important
+  box-shadow:none !important
+  &:before
+   bottom: -1px
+   content: ''
+   left: 0
+   position: absolute
+   transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+   width: 100%
+   border-style: solid
+   border-width: thin 0 0 0
+   border-color: rgba(0,0,0,0.42)
+  &:focus
+   border-color:none !important
+  .dropdown
+   ul
+    z-index:3
+    transition: opacity .1s linear
+    background: #ffffff
+    border: 0
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2)
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2)
+    outline: 1px solid transparent
+    overflow: hidden
+    overflow-y: auto
+  input
+   padding-top: 6px;
+.ins-pro
+ .flex
+  > label
+   line-height:32px
+   height:32px
+   display:inline-block
+  .ctn
+   margin-bottom:15px
+   .list-check
+    display:flex
+    .v-input
+     flex: initial
+     margin-right:25px
+     .v-input--selection-controls__input
+      margin-right:5px
+   .v-input
+    margin:0
+  .block
+   &.line
+    display:block
+    height:32px
+    line-height:32px
+    margin-bottom:10px
+ &.box-competi
+  padding: 34px 24px
+  background-color #f8f8f8
+  border: 1px solid #eee
+  margin-bottom 24px
+  border-radius 2px !important
+.v-input--switch
+ &.v-input--is-disabled
+  .v-input--switch__thumb
+   &.success--text
+    color:#4caf50 !important
+.application
+ .theme--light
+  &.v-input--switch
+   &.v-input--is-disabled
+    .v-input--switch__thumb
+     color:#4caf50 !important
+.el-tab
+ .v-tabs__div
+  a
+   &.v-tabs__item
+    font-size:16px
+    color:#777
+    &.v-tabs__item--active
+     color:#FFF
+     background-color: color-primary
+ .v-tabs__slider
+  height:3px
+ &.border-b
+  &:after
+   position:absolute
+   content:""
+   height:1px
+   background-color:rgba(0,0,0,.15)
+   width:100%
+   bottom:0
+ .v-tabs__div
+  text-transform: capitalize
+.title
+ &.w-bd-b
+  position:relative
+  &:before
+   position:absolute
+   content:""
+   height:2px
+   width:50px
+   background-color:rgba(0,0,0,.5)
+   left:0
+   bottom:-24px
+.pricing-column
+ .v-card__title
+  > div
+   width 100%
+.pricing-column-price-wrapper
+ .pricing-column-price
+  .pricing-column-wrapper
+   .pricing-column-term-price
+    font-size: 36px
+    padding-top: 10px
+    padding-bottom: 10px
+    .pricing-column-dollar
+     font-size:24px
+.invoice-card
+ padding:30px
+ address
+  font-style: normal
+.table-default
+ .v-table
+  tbody
+   tr
+    td
+     &:first-child
+      white-space:nowrap !important
+aside
+ &.no-bd
+  .v-navigation-drawer__border
+   background-color:transparent !important
+.page-item
+ .img-demo
+  img
+   width:100%
+ .info-inpage
+  span
+   cursor:pointer
+.mn-help
+ .v-list__tile
+  a
+   color:#757575
+   text-decoration:none
+   border-left: 2px solid transparent
+   transition: color 0.1s ease-in
+   padding-left: 16px
+   &:hover
+   &:focus
+    color: color-primary
+    border-color: color-primary
+img
+ &.w-auto
+  width auto !important
+#mc_embed_signup
+ .form-el-sub
+  max-width: 550px
+  margin: 0 auto 15px
+  text-align left
+  padding-top 0
+  p
+   font-weight: 300
+   font-size: 14px
+   line-height: 20px
+   letter-spacing: 0
+   max-width: 400px
+   margin: 0 auto 10px
+   &.in-cta
+    max-width: 450px
+    text-align: left
+    margin-bottom: 6px
+    font-size: 15px
+    line-height: 20px
+  .sub-inbox
+   display:flex
+   align-items: center
+   justify-content: center
+   @media (max-width: 768px)
+    display:block
+   .mc-field-group
+    position:relative
+    width 100%
+    @media (max-width: 768px)
+     display:block
+     width:100%
+    input
+     &.email
+      width 100%
+      height: 48px
+      padding: 1em
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+      border-right-color: transparent
+      @media (max-width: 768px)
+       border-radius:3px
+       border-right-color: #ABB0B2
+   #mc-embedded-subscribe
+    &.button
+     height: 48px
+     background-color: #03a9f4
+     font-weight: 700
+     font-size: 1em
+     border-top-left-radius: 0
+     border-bottom-left-radius: 0
+     outline: none
+     @media (max-width: 768px)
+      border-radius:3px
+      width:60%
+   div
+    &.mce_inline_error
+     left:8px
+     bottom:-35px
+     padding:0
+     position: absolute
+     background-color: transparent !important
+     color: red !important
+     font-weight: 400 !important
+     @media (max-width: 768px)
+      position:relative
+      left:auto
+      bottom:auto
+  #mce-responses
+   float none
+   width 100%
+   margin 0
+   padding 0em .5em 0em .5em
+   .response
+    margin: 0em 0
+    padding: 1em 0 .5em 0
+    font-weight: 500
+    float: none
+    top: -1.5em
+    z-index: 1
+    width: 100%
+.v-card
+ &.no-shadow
+  box-shadow:none
+ &.mate-card1
+  background-color: #fff
+  border: 1px solid #dfe1e5
+  border-radius: 8px
+  box-shadow none
+  transition: box-shadow .3s linear
+  &:hover
+   box-shadow 0 2px 10px 0px rgba(60, 64, 67, .15)
+.filter-topbar
+ @media (max-width: 768px)
+  position absolute
+  left 16px
+  bottom 9px
+ .sl-hotel
+  .v-input__control
+   min-height 36px
+   .v-input__slot
+    box-shadow none
+    border 1px solid rgba(0,0,0,.12)
+    border-radius 30px
+    transition: all 300ms ease-out
+    .v-select__slot
+     .v-select__selections
+      .v-select__selection
+       width 100%
+       max-width 100%
+      div + input
+       display none
+   &:hover
+    .v-input__slot
+     box-shadow 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)
+     border-color transparent
+.v-menu__content
+ &.menuable__content__active
+  border-radius 12px
+  box-shadow rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px
+  margin-top 5px
+  .v-card
+   &.v-select-list
+    border-radius 12px
+.v-list__group
+ &.multi-sub
+  .v-list__group__header
+   border-top-right-radius 30px
+   border-bottom-right-radius 30px
+   .v-list__group__header__prepend-icon
+    color color-active !important
+    padding-left 26px
+  &:before
+  &:after
+   background-color transparent !important
+  .v-list__group
+   &:before
+   &:after
+    background-color transparent !important
+  .parent-node
+   .v-list__tile
+    padding 0 16px 0 0
+   .v-list__tile__title
+    font-size 16px
+  .v-list__group__items
+   .v-list__group--active
+    &:before
+     background-color transparent
+   .sub-node2
+    border-top-right-radius 30px
+    border-bottom-right-radius 30px
+    .v-list__tile--link
+     border-top-right-radius 30px
+     border-bottom-right-radius 30px
+     &.v-list__tile--active
+      background-color #e8f0fe
+      color color-active !important
+.divi-side
+ margin-right 24px
+ margin-top 20px
+ margin-bottom 20px
+.box-inchannel
+ .tab-chn
+  .v-tabs__bar
+   border-bottom 0px solid rgba(0,0,0,.12)
+   margin-top 10px
+   .v-tabs__item
+    padding 6px 20px
+    &:hover
+     background-color #e8f0fe
+    &.v-tabs__item--active
+     background-color #e8f0fe
+  .v-tabs__items
+   padding-top: 0
+   border: 0px solid rgba(0,0,0,0.12)
+   border-top-width: 0px
+   padding-left: 0
+   padding-right: 0
+  .v-window
+   &.v-window-x-transition-enter
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    animation-delay: 0s !important
+   &.v-window-x-transition-leave-to
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    animation-delay: 0s !important
+.card-sldate
+background-color #FFF
+ .v-card__actions
+  padding-right calc(1rem + 16px)
+  padding-top 0
+  padding-bottom 20px
+ .v-card__text
+  padding-bottom 10px
+ .v-card
+  &.v-picker
+   box-shadow none
+   border 1px solid #ccc
+   padding-top 15px
+   .v-date-picker-table
+    table
+     border-spacing: 0;
+    .v-btn
+     &.v-btn--active
+      background-color transparent
+      &:before
+       background-color #1967d2!important
+       z-index 1
+       opacity 1
+     &.v-btn--outline
+      background-color transparent
+      .v-date-picker-table__events
+       display none
+      &:before
+       background-color transparent
+     .v-btn__content
+      z-index: 2
+    .v-date-picker-table__events
+     border-radius: 0
+     bottom: 0
+     content: ""
+     display: block
+     height: 100%
+     left: 0
+     position: absolute
+     transform: none
+     z-index 0
+    .date-range__date-in-range
+     // background-color #1967d2!important
+     background-color: #e8f0fe !important
+     border-color: #e8f0fe !important
+     opacity .95
+     width 100%
+     height 100%
+     &.date-range__range-end
+      // border-top-right-radius 30px
+      // border-bottom-right-radius 30px
+      opacity 1
+      border-radius 30px
+     &.date-range__range-start
+      // border-top-left-radius 30px
+      // border-bottom-left-radius 30px
+      opacity 1
+      border-radius 30px
+    // .v-date-picker-table__event
+.v-tabs__slider-wrapper
+ z-index 2
+.mate2-slc
+ display inline-block
+ margin-right 8px
+ margin-top 10px
+ max-width: 220px
+ .v-input__prepend-outer
+  position: absolute
+  left: 15px
+  top: 3px
+ .v-select__slot
+  .v-select__selections
+   .v-select__selection
+    width 100%
+    max-width 100%
+   div + input
+    display none
+.menuable__content__active
+ .v-list__tile
+  height 36px
+.ft-cap
+ font-style: italic
+ margin-left: 15px
+ padding-top: 15px
+ display: block
+ position relative
+ strong
+  color color-active
+// .tab-transition-enter-active
+// .tab-transition-enter-to
+// .tab-reverse-transition-enter-active
+// .tab-reverse-transition-enter-to
+.tab-chn
+ .tab-transition-leave-to
+ .tab-transition-enter-to
+ .tab-transition-enter-active
+ .tab-transition-leave-active
+ .tab-reverse-transition-enter-to
+ .tab-reverse-transition-enter-active
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+ .tab-transition-leave
+ .tab-transition-leave-active
+ .tab-reverse-transition-leave-active
+ .tab-reverse-transition-leave-to
+  position: relative
+  top: 0
+  opacity: 0
+  transform: none
+ .tab-transition-leave-to
+ .tab-transition-enter-to
+ .tab-transition-enter-active
+ .tab-transition-leave-active
+ .tab-reverse-transition-enter-to
+ .tab-reverse-transition-enter-active
+  position: relative
+  transform: none
+ .tab-transition-enter-active
+ .tab-transition-enter-to
+ .tab-reverse-transition-enter-to
+ .tab-reverse-transition-enter-active
+  opacity: 1
+.v-input
+ &.v-input--checkbox
+  padding 0
+  &.custom-ico
+   &.ico-breakfast
+    .v-input__slot
+     background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='24px' height='15px' viewBox='0 0 24 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3c/defs%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='breakfast-1' fill='%23000000' fill-rule='nonzero'%3e%3cpath d='M22.9453125,11.53125 L22.8488159,11.53125 C23.0994873,11.1864624 23.2137451,10.7944336 23.1712646,10.3879395 C23.0758667,9.47479247 22.1850586,8.56274414 21.3740845,7.90997316 C21.3762818,7.9048462 21.3786621,7.89898683 21.3808594,7.89385988 C21.4855957,7.63696289 21.4286499,7.34051512 21.2351074,7.13873292 C21.0805664,6.9777832 20.9073487,6.82159425 20.7207642,6.67456055 C20.5682373,6.55444336 20.347229,6.58062745 20.2271118,6.7331543 C20.1068115,6.88568114 20.1329956,7.10668945 20.2855224,7.22680664 C20.4470215,7.35406495 20.5958862,7.48846434 20.7297363,7.62835692 C20.701355,7.69812009 20.6654663,7.78417969 20.6233521,7.88323973 C20.3023682,8.63415525 19.4683228,10.4545898 18.5002441,11.53125 L17.3410034,11.53125 C17.5094604,11.1150513 17.6982422,10.4031372 17.9102783,9.13623047 C18.088623,8.07073973 18.2259521,6.94720458 18.3099975,6.1900635 C18.5357666,6.26788331 18.7979737,6.36895753 19.072815,6.49658203 C19.1207886,6.51873778 19.1709595,6.52917478 19.2203979,6.52917478 C19.3531494,6.52917478 19.4802246,6.45373537 19.5397339,6.32537841 C19.6213989,6.14923097 19.5446777,5.94030759 19.3685303,5.85864258 C18.9992065,5.68725586 18.651123,5.55981445 18.3733521,5.46972656 C18.3515625,5.22363281 18.2012329,5.00244141 17.9718018,4.89532472 C17.4733887,4.661499 16.3822632,4.26910402 14.6713257,4.26580809 C14.0969238,4.26690675 13.5926513,4.31195067 13.1570435,4.380249 L13.1570435,3.27319336 C13.1570435,2.35565184 12.4105224,1.60913086 11.492981,1.60913086 L9.8671875,1.60913086 L9.8671875,0.3515625 C9.8671875,0.157470703 9.70989989,0 9.515625,0 L4.5234375,0 C4.32916261,0 4.171875,0.157470703 4.171875,0.3515625 C4.171875,0.545654297 4.32916261,0.703125 4.5234375,0.703125 L9.1640625,0.703125 L9.1640625,6.29608153 C8.79235838,6.52844241 8.42797852,6.80676272 8.10827634,7.13909911 C7.91510011,7.34069822 7.8581543,7.63696289 7.96289063,7.89385988 C7.96508789,7.89898683 7.96746825,7.9048462 7.96966552,7.91015625 C7.23614503,8.50030519 6.43817138,9.30249023 6.22155759,10.125 L1.921875,10.125 C1.80560302,10.125 1.7109375,10.0303345 1.7109375,9.9140625 L1.7109375,0.703125 L3,0.703125 C3.19427489,0.703125 3.3515625,0.545654297 3.3515625,0.3515625 C3.3515625,0.157470703 3.19427489,0 3,0 L1.359375,0 C1.16510011,0 1.0078125,0.157470703 1.0078125,0.3515625 L1.0078125,9.9140625 C1.0078125,10.3619385 1.33190916,10.7349243 1.7578125,10.812561 L1.7578125,11.53125 L1.0546875,11.53125 C0.473144531,11.53125 2.84217094e-14,12.0043945 2.84217094e-14,12.5859375 C2.84217094e-14,13.1674805 0.473144531,13.640625 1.0546875,13.640625 L1.3828125,13.640625 L1.3828125,13.7578125 C1.3828125,14.4169922 1.91894531,14.953125 2.578125,14.953125 L21.421875,14.953125 C22.0810547,14.953125 22.6171875,14.4169922 22.6171875,13.7578125 L22.6171875,13.640625 L22.9453125,13.640625 C23.5268555,13.640625 24,13.1674805 24,12.5859375 C24,12.0043945 23.5268555,11.53125 22.9453125,11.53125 Z M21.0842285,8.58178711 C21.9191895,9.28253175 22.4190674,9.95526122 22.4719849,10.4609985 C22.5126343,10.8511963 22.2791748,11.2373657 21.8292847,11.53125 L19.4089966,11.53125 C20.1091919,10.6056518 20.7008057,9.43212891 21.0842285,8.58178711 Z M17.6731568,5.53179933 L17.6568604,5.68835447 C17.5845337,6.38012695 17.4318237,7.73016356 17.22052,8.99725341 C16.8720703,11.0870362 16.6038208,11.4724732 16.5498047,11.53125 L12.7937622,11.53125 C12.7388306,11.4710083 12.4709473,11.0830078 12.12323,8.99725341 C11.9119263,7.73016356 11.7590332,6.38012695 11.6867065,5.68817138 L11.6839599,5.66107177 C11.6839599,5.66033934 11.6837768,5.65942383 11.6837768,5.65869141 L11.6705933,5.53179933 C12.0292969,5.36352539 13.039856,4.97204588 14.6711426,4.96875 C16.303894,4.97186278 17.31427,5.36352539 17.6731568,5.53179933 Z M9.87561038,2.31225586 L11.4927979,2.31225586 C12.0227051,2.31225586 12.4537354,2.74346925 12.4537354,3.27319336 L12.4537354,4.52142333 C12.1781616,4.59027098 11.9439698,4.66534425 11.7506104,4.73730469 L11.7506104,3.46069336 C11.7506104,3.21533203 11.5508423,3.01538086 11.3052979,3.01538086 L9.87561038,3.01538086 L9.87561038,2.31225586 Z M11.0474854,3.71850586 L11.0474854,5.20660402 C11.0222168,5.25494386 11.0026245,5.30603025 10.9892578,5.35913086 L9.8671875,5.35913086 L9.8671875,3.71850586 L11.0474854,3.71850586 Z M9.67675781,6.80621339 C9.68902589,6.79998778 9.70111083,6.79321289 9.71246339,6.78533934 C9.71374509,6.78442383 9.71520994,6.78369141 9.71667478,6.78277589 C10.1801147,6.51470948 10.649231,6.32226563 11.0337525,6.18988036 C11.1177979,6.94702148 11.255127,8.07073973 11.4334717,9.13623047 C11.6456909,10.4031372 11.8342896,11.1150513 12.0027466,11.53125 L10.8444214,11.53125 C9.8735962,10.4527588 9.04064944,8.63378906 8.72058103,7.88360597 C8.6782837,7.78417969 8.64239503,7.69812009 8.61529542,7.62615966 C8.93151853,7.29748538 9.30139163,7.02703856 9.67675781,6.80621339 Z M8.25933839,8.5819702 C8.64221194,9.43157958 9.23345948,10.6047363 9.93511964,11.53125 L7.49633789,11.53125 C7.07318114,11.2483521 6.84558103,10.8757324 6.86901853,10.4959717 C6.86956786,10.4848022 6.87048338,10.4736328 6.87176513,10.4609985 C6.92468259,9.95526122 7.42456055,9.28271484 8.25933839,8.5819702 Z M2.4609375,10.828125 L6.18804933,10.828125 C6.23144531,11.0758667 6.33416747,11.3131714 6.489624,11.53125 L2.4609375,11.53125 L2.4609375,10.828125 Z M22.9453125,12.9375 L4.50585938,12.9375 C4.31158448,12.9375 4.15429688,13.0949707 4.15429688,13.2890625 C4.15429688,13.4831543 4.31158448,13.640625 4.50585938,13.640625 L21.9140625,13.640625 L21.9140625,13.7578125 C21.9140625,14.0291748 21.6932373,14.25 21.421875,14.25 L2.578125,14.25 C2.30676272,14.25 2.0859375,14.0291748 2.0859375,13.7578125 L2.0859375,13.640625 L3,13.640625 C3.19427489,13.640625 3.3515625,13.4831543 3.3515625,13.2890625 C3.3515625,13.0949707 3.19427489,12.9375 3,12.9375 L1.0546875,12.9375 C0.860778797,12.9375 0.703125,12.7798462 0.703125,12.5859375 C0.703125,12.3920288 0.860778797,12.234375 1.0546875,12.234375 L22.9453125,12.234375 C23.1392212,12.234375 23.296875,12.3920288 23.296875,12.5859375 C23.296875,12.7798462 23.1392212,12.9375 22.9453125,12.9375 Z' id='Shape'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e")
+     background-repeat no-repeat
+     background-position: 40px 10px
+     opacity 0.84
+     padding-left 10px
+     margin-bottom 0
+     height 39px
+     padding-right 15px
+     .v-input--selection-controls__input
+      padding-right 55px
+     label
+      color rgba(0,0,0,0.87)
+ &.v-select
+  &.custom-ico
+   &.ico-breakfast
+    .v-input__slot
+     background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='24px' height='15px' viewBox='0 0 24 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3c/defs%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='breakfast-1' fill='%23000000' fill-rule='nonzero'%3e%3cpath d='M22.9453125,11.53125 L22.8488159,11.53125 C23.0994873,11.1864624 23.2137451,10.7944336 23.1712646,10.3879395 C23.0758667,9.47479247 22.1850586,8.56274414 21.3740845,7.90997316 C21.3762818,7.9048462 21.3786621,7.89898683 21.3808594,7.89385988 C21.4855957,7.63696289 21.4286499,7.34051512 21.2351074,7.13873292 C21.0805664,6.9777832 20.9073487,6.82159425 20.7207642,6.67456055 C20.5682373,6.55444336 20.347229,6.58062745 20.2271118,6.7331543 C20.1068115,6.88568114 20.1329956,7.10668945 20.2855224,7.22680664 C20.4470215,7.35406495 20.5958862,7.48846434 20.7297363,7.62835692 C20.701355,7.69812009 20.6654663,7.78417969 20.6233521,7.88323973 C20.3023682,8.63415525 19.4683228,10.4545898 18.5002441,11.53125 L17.3410034,11.53125 C17.5094604,11.1150513 17.6982422,10.4031372 17.9102783,9.13623047 C18.088623,8.07073973 18.2259521,6.94720458 18.3099975,6.1900635 C18.5357666,6.26788331 18.7979737,6.36895753 19.072815,6.49658203 C19.1207886,6.51873778 19.1709595,6.52917478 19.2203979,6.52917478 C19.3531494,6.52917478 19.4802246,6.45373537 19.5397339,6.32537841 C19.6213989,6.14923097 19.5446777,5.94030759 19.3685303,5.85864258 C18.9992065,5.68725586 18.651123,5.55981445 18.3733521,5.46972656 C18.3515625,5.22363281 18.2012329,5.00244141 17.9718018,4.89532472 C17.4733887,4.661499 16.3822632,4.26910402 14.6713257,4.26580809 C14.0969238,4.26690675 13.5926513,4.31195067 13.1570435,4.380249 L13.1570435,3.27319336 C13.1570435,2.35565184 12.4105224,1.60913086 11.492981,1.60913086 L9.8671875,1.60913086 L9.8671875,0.3515625 C9.8671875,0.157470703 9.70989989,0 9.515625,0 L4.5234375,0 C4.32916261,0 4.171875,0.157470703 4.171875,0.3515625 C4.171875,0.545654297 4.32916261,0.703125 4.5234375,0.703125 L9.1640625,0.703125 L9.1640625,6.29608153 C8.79235838,6.52844241 8.42797852,6.80676272 8.10827634,7.13909911 C7.91510011,7.34069822 7.8581543,7.63696289 7.96289063,7.89385988 C7.96508789,7.89898683 7.96746825,7.9048462 7.96966552,7.91015625 C7.23614503,8.50030519 6.43817138,9.30249023 6.22155759,10.125 L1.921875,10.125 C1.80560302,10.125 1.7109375,10.0303345 1.7109375,9.9140625 L1.7109375,0.703125 L3,0.703125 C3.19427489,0.703125 3.3515625,0.545654297 3.3515625,0.3515625 C3.3515625,0.157470703 3.19427489,0 3,0 L1.359375,0 C1.16510011,0 1.0078125,0.157470703 1.0078125,0.3515625 L1.0078125,9.9140625 C1.0078125,10.3619385 1.33190916,10.7349243 1.7578125,10.812561 L1.7578125,11.53125 L1.0546875,11.53125 C0.473144531,11.53125 2.84217094e-14,12.0043945 2.84217094e-14,12.5859375 C2.84217094e-14,13.1674805 0.473144531,13.640625 1.0546875,13.640625 L1.3828125,13.640625 L1.3828125,13.7578125 C1.3828125,14.4169922 1.91894531,14.953125 2.578125,14.953125 L21.421875,14.953125 C22.0810547,14.953125 22.6171875,14.4169922 22.6171875,13.7578125 L22.6171875,13.640625 L22.9453125,13.640625 C23.5268555,13.640625 24,13.1674805 24,12.5859375 C24,12.0043945 23.5268555,11.53125 22.9453125,11.53125 Z M21.0842285,8.58178711 C21.9191895,9.28253175 22.4190674,9.95526122 22.4719849,10.4609985 C22.5126343,10.8511963 22.2791748,11.2373657 21.8292847,11.53125 L19.4089966,11.53125 C20.1091919,10.6056518 20.7008057,9.43212891 21.0842285,8.58178711 Z M17.6731568,5.53179933 L17.6568604,5.68835447 C17.5845337,6.38012695 17.4318237,7.73016356 17.22052,8.99725341 C16.8720703,11.0870362 16.6038208,11.4724732 16.5498047,11.53125 L12.7937622,11.53125 C12.7388306,11.4710083 12.4709473,11.0830078 12.12323,8.99725341 C11.9119263,7.73016356 11.7590332,6.38012695 11.6867065,5.68817138 L11.6839599,5.66107177 C11.6839599,5.66033934 11.6837768,5.65942383 11.6837768,5.65869141 L11.6705933,5.53179933 C12.0292969,5.36352539 13.039856,4.97204588 14.6711426,4.96875 C16.303894,4.97186278 17.31427,5.36352539 17.6731568,5.53179933 Z M9.87561038,2.31225586 L11.4927979,2.31225586 C12.0227051,2.31225586 12.4537354,2.74346925 12.4537354,3.27319336 L12.4537354,4.52142333 C12.1781616,4.59027098 11.9439698,4.66534425 11.7506104,4.73730469 L11.7506104,3.46069336 C11.7506104,3.21533203 11.5508423,3.01538086 11.3052979,3.01538086 L9.87561038,3.01538086 L9.87561038,2.31225586 Z M11.0474854,3.71850586 L11.0474854,5.20660402 C11.0222168,5.25494386 11.0026245,5.30603025 10.9892578,5.35913086 L9.8671875,5.35913086 L9.8671875,3.71850586 L11.0474854,3.71850586 Z M9.67675781,6.80621339 C9.68902589,6.79998778 9.70111083,6.79321289 9.71246339,6.78533934 C9.71374509,6.78442383 9.71520994,6.78369141 9.71667478,6.78277589 C10.1801147,6.51470948 10.649231,6.32226563 11.0337525,6.18988036 C11.1177979,6.94702148 11.255127,8.07073973 11.4334717,9.13623047 C11.6456909,10.4031372 11.8342896,11.1150513 12.0027466,11.53125 L10.8444214,11.53125 C9.8735962,10.4527588 9.04064944,8.63378906 8.72058103,7.88360597 C8.6782837,7.78417969 8.64239503,7.69812009 8.61529542,7.62615966 C8.93151853,7.29748538 9.30139163,7.02703856 9.67675781,6.80621339 Z M8.25933839,8.5819702 C8.64221194,9.43157958 9.23345948,10.6047363 9.93511964,11.53125 L7.49633789,11.53125 C7.07318114,11.2483521 6.84558103,10.8757324 6.86901853,10.4959717 C6.86956786,10.4848022 6.87048338,10.4736328 6.87176513,10.4609985 C6.92468259,9.95526122 7.42456055,9.28271484 8.25933839,8.5819702 Z M2.4609375,10.828125 L6.18804933,10.828125 C6.23144531,11.0758667 6.33416747,11.3131714 6.489624,11.53125 L2.4609375,11.53125 L2.4609375,10.828125 Z M22.9453125,12.9375 L4.50585938,12.9375 C4.31158448,12.9375 4.15429688,13.0949707 4.15429688,13.2890625 C4.15429688,13.4831543 4.31158448,13.640625 4.50585938,13.640625 L21.9140625,13.640625 L21.9140625,13.7578125 C21.9140625,14.0291748 21.6932373,14.25 21.421875,14.25 L2.578125,14.25 C2.30676272,14.25 2.0859375,14.0291748 2.0859375,13.7578125 L2.0859375,13.640625 L3,13.640625 C3.19427489,13.640625 3.3515625,13.4831543 3.3515625,13.2890625 C3.3515625,13.0949707 3.19427489,12.9375 3,12.9375 L1.0546875,12.9375 C0.860778797,12.9375 0.703125,12.7798462 0.703125,12.5859375 C0.703125,12.3920288 0.860778797,12.234375 1.0546875,12.234375 L22.9453125,12.234375 C23.1392212,12.234375 23.296875,12.3920288 23.296875,12.5859375 C23.296875,12.7798462 23.1392212,12.9375 22.9453125,12.9375 Z' id='Shape'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e")
+     background-repeat no-repeat
+     background-position 12px 10px
+     opacity .84
+   &.ico-roomtype
+    .v-input__slot
+     background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='22px' height='19px' viewBox='0 0 22 19' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3c/defs%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='room-1' fill='%23000000' fill-rule='nonzero'%3e%3cg id='Template'%3e%3cpath d='M21.5,11.1 L21.1,11.1 L21.1,10 C21.1,9.3 20.7,8.6 20,8.4 L20,2.8 C20,2.7 19.9,2.5 19.8,2.5 C20,2.3 20.1,2 20.1,1.8 C20.1,1 19.5,0.4 18.7,0.4 C17.9,0.4 17.3,1 17.3,1.8 C17.3,2.1 17.4,2.3 17.5,2.5 L4.9,2.5 C5,2.3 5.1,2 5.1,1.8 C5.1,1 4.5,0.4 3.7,0.4 C2.9,0.4 2.2,1 2.2,1.8 C2.2,2.1 2.3,2.3 2.4,2.5 C2.3,2.6 2.2,2.7 2.2,2.8 L2.2,8.3 C1.6,8.6 1.1,9.2 1.1,9.9 L1.1,11 L0.8,11 C0.6,11 0.4,11.2 0.4,11.4 L0.4,16.4 C0.4,16.6 0.6,16.8 0.8,16.8 L1.2,16.8 L1.2,18.6 C1.2,18.8 1.4,19 1.6,19 L3,19 C3.2,19 3.4,18.8 3.4,18.6 L3.4,16.8 L19,16.8 L19,18.6 C19,18.8 19.2,19 19.4,19 L20.8,19 C21,19 21.2,18.8 21.2,18.6 L21.2,16.8 L21.6,16.8 C21.8,16.8 22,16.6 22,16.4 L22,11.4 C21.9,11.2 21.7,11.1 21.5,11.1 Z M18.7,1.1 C19.1,1.1 19.4,1.4 19.4,1.8 C19.4,2.2 19.1,2.5 18.7,2.5 C18.3,2.5 18,2.2 18,1.8 C18,1.4 18.3,1.1 18.7,1.1 Z M3.7,1.1 C4.1,1.1 4.4,1.4 4.4,1.8 C4.4,2.2 4.1,2.5 3.7,2.5 C3.3,2.5 2.9,2.2 2.9,1.8 C2.9,1.4 3.3,1.1 3.7,1.1 Z M2.9,3.2 L19.3,3.2 L19.3,8.2 L17.9,8.2 C18.1,7.9 18.3,7.5 18.3,7.1 L18.3,6.4 C18.3,5.4 17.5,4.6 16.5,4.6 L13.6,4.6 C12.6,4.6 11.8,5.4 11.8,6.4 L11.8,7.1 C11.8,7.5 11.9,7.9 12.2,8.2 L10,8.2 C10.2,7.9 10.4,7.5 10.4,7.1 L10.4,6.4 C10.4,5.4 9.6,4.6 8.6,4.6 L5.8,4.6 C4.8,4.6 4,5.4 4,6.4 L4,7.1 C4,7.5 4.1,7.9 4.4,8.2 L2.9,8.2 L2.9,3.2 Z M17.6,6.4 L17.6,7.1 C17.6,7.7 17.1,8.2 16.5,8.2 L13.6,8.2 C13,8.2 12.5,7.7 12.5,7.1 L12.5,6.4 C12.5,5.8 13,5.3 13.6,5.3 L16.5,5.3 C17.1,5.3 17.6,5.8 17.6,6.4 Z M9.7,6.4 L9.7,7.1 C9.7,7.7 9.2,8.2 8.6,8.2 L5.8,8.2 C5.2,8.2 4.7,7.7 4.7,7.1 L4.7,6.4 C4.7,5.8 5.2,5.3 5.8,5.3 L8.7,5.3 C9.3,5.3 9.7,5.8 9.7,6.4 Z M1.9,10 C1.9,9.4 2.4,8.9 3,8.9 L19.4,8.9 C20,8.9 20.5,9.4 20.5,10 L20.5,11.1 L1.9,11.1 L1.9,10 Z M2.6,18.2 L1.9,18.2 L1.9,16.8 L2.6,16.8 L2.6,18.2 Z M20.4,18.2 L19.7,18.2 L19.7,16.8 L20.4,16.8 L20.4,18.2 Z M21.2,16.1 L1.2,16.1 L1.2,11.8 L21.2,11.8 L21.2,16.1 Z' id='Shape'%3e%3c/path%3e%3cpath d='M3.7,14.6 L2.2,14.6 C2,14.6 1.8,14.8 1.8,15 C1.8,15.2 2,15.4 2.2,15.4 L3.6,15.4 C3.9,15.3 4,15.2 4,15 C4,14.8 3.9,14.6 3.7,14.6 Z' id='Shape'%3e%3c/path%3e%3cpath d='M20.1,14.6 L5.1,14.6 C4.9,14.6 4.7,14.8 4.7,15 C4.7,15.2 4.9,15.4 5.1,15.4 L20.1,15.4 C20.3,15.4 20.5,15.2 20.5,15 C20.5,14.8 20.3,14.6 20.1,14.6 Z' id='Shape'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e")
+     background-repeat no-repeat
+     background-position 12px 10px
+     opacity .84
+.el-c-default
+ padding-top 20px
+ .v-card__title
+  .lbl-ft
+   position relative
+   height 30px
+   display flex
+   align-items center
+   margin-bottom 15px
+   &:before
+    position: absolute;
+    content: '';
+    background-color: #1967d2;
+    width: 2px;
+    left: -30px;
+    top: 0;
+    height: 30px;
+.v-toolbar
+ &.mate2
+  &.w-sl-hotel
+   .v-toolbar__content
+    .v-toolbar__title
+     width 300px
+    @media (max-width: 768px)
+     margin-bottom 54px
+     border-bottom 1px solid #eee
+     .v-toolbar__title
+      width auto
+     // .v-menu
+     //  position absolute
+     //  right 85px
+   &.kpi
+    .v-toolbar__content
+     @media (max-width: 768px)
+      margin-bottom 0
+.body-w-sl-ht
+ @media (max-width: 768px)
+  padding-top 56px
+ &.kpi
+  @media (max-width: 768px)
+   padding-top 0
+.v-snack
+ &.box-price-snackbar
+  .v-snack__wrapper
+   background-color rgba(255,255,255,0.8)
+   color #333
+   position relative
+   // border-bottom 2px solid #1967d2
+   border-bottom-left-radius 0
+   border-bottom-right-radius 0
+   span
+    font-weight 500
+   .system-ico
+    img
+     width 30px
+     height 30px
+     margin-right 15px
+   .b-progress
+    width 100%
+    display block
+    position absolute
+    bottom -15px
+    left 0px
+   &.scrap-finished
+    .el-progress
+     .v-progress-linear__background
+      background-color #0f9d58 !important
+      opacity 1 !important
+     .v-progress-linear__bar
+      display none
+   &.scrap-error
+    .el-progress
+     .v-progress-linear__background
+      background-color #e65100 !important
+      opacity 1 !important
+     .v-progress-linear__bar
+      display none
+.v-btn
+ &.v-btn--flat
+  &.grey--text
+   &:hover
+    .v-btn__content
+     color #1967d2 !important
+ &.btn-tool
+  text-transform initial
+  transition all 300ms ease-out
+  border-color #ccc
+  .v-btn__content
+   i
+    color #777
+    margin-right 7px
+    margin-left 0
+    transition all 300ms ease-out !important
+  &:hover
+   box-shadow 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)
+   border-color transparent
+   background-color transparent
+   i
+    color color-active
+  &:before
+   display none
+.el-dialog-defaul
+.v-dialog__content
+ .v-dialog
+  border-radius 8px
+.title-center
+ font-size 26px
+ font-weight 400
+ margin 40px 0 30px
+ position relative
+ &.title-line-bot
+  &:after
+   position absolute
+   content ''
+   height 1px
+   width 86px
+   background-color #999
+   left 50%
+   bottom -20px
+   transform translateX(-50%)
+.n-form2
+ >div
+  label
+   display block
+ .mate2-slc
+  margin-left 8px
+ .v-btn
+  &.btn-tool
+   .v-btn__content
+    i
+     color #fff
+.v-menu
+ &.noti-tile
+  .v-toolbar__title
+   overflow visible
+   .btn-w-badge
+    .v-badge
+     .v-badge__badge
+      font-size 10px
+      border-radius 2px
+      padding 1px 3px
+      height 17px
+      width auto
+      right -2px
+      top -6px
+.v-list
+ &.noti-box
+  .v-subheader
+   height 40px
+   border-bottom 1px solid #eee
+   margin-bottom 10px
+  .v-list__tile
+   height auto
+   padding-bottom 10px
+   .v-list__tile__sub-title
+    line-height 1.2
+.toolbar-for-table
+ &.v-toolbar
+  background-color transparent!important
+  box-shadow none
+  .mate2-slc
+   margin-top 0
+   margin-right 5px
+   padding-top 0
+  .v-btn
+   margin-left 0
+  .v-chip
+   font-weight bold
+   &.no-bd
+    border-width 0
+    box-shadow none!important
+    &:hover
+     cursor default
+    &:after
+     display none!important
+ .mate2-slc
+  .v-input__slot
+   .v-menu
+    display none
+.select-hotel-box
+ border-left: 1px solid #dadada;
+ padding-left: 16px;
+ margin: 0 auto
+ &:hover
+  cursor pointer
+ label
+  font-size: .85em;
+  color: #555;
+ .ht-name
+  font-size: 1.3rem
+  font-weight: 500
+  display flex
+  align-items center
+  i
+   font-size 20px
+   margin-left 5px
+.review_card
+ .user-review
+  .review_detail
+   h4
+    padding 15px 0 0
+   p
+    padding-top 15px
+    font-size 1.15rem
+   em
+    color: #999
+    float: right
+   .review_detail__star
+    i
+     font-size 20px
+   .use-data
+    border: 1px dashed #ccc
+    background-color: #f4f4f4
+    padding: 10px 15px
+    font-weight: 500
+ .review_reply
+  padding-top 30px
+  .review_detail
+   border-left 5px solid #ededed
+   padding-left 20px
+.quillWrapper
+ border-radius 14px
+ .ql-toolbar
+  border-top-left-radius 14px
+  border-top-right-radius 14px
+ .ql-container
+  border-bottom-left-radius 14px
+  border-bottom-right-radius 14px
+.list-select-month
+ width 100%
+ .v-btn
+  text-transform initial
+  &.v-btn--active
+   color #fff
+   &:before
+    background-color color-active
+    opacity 1
+.month-sum
+ padding 10px 0
+ background-color #fafafa
+ border 1px solid rgba(0,0,0,0.12)
+ border-radius 3px
+ .flex
+  border-right 1px solid rgba(0,0,0,0.12) !important
+  .v-card
+   background-color #fafafa
+  &:last-child
+   border-right none !important
+ .v-chip
+  background-color transparent !important
+  .v-chip__content
+   cursor pointer
+  span
+   color color-active
+   font-weight bold
+   font-size 1.2rem
+   i
+    font-size 1.2rem
+    margin-left 10px
+  &.red
+   span
+    color #f44336
+ .basic-list-headerInfo
+  position relative
+  text-align center
+  padding 10px 0 0 0
+  span
+   display: inline-block
+   margin-bottom: 4px
+   color: rgba(0,0,0,.45)
+   font-size: 14px
+   line-height: 22px
+  p
+   color: rgba(0,0,0,.85)
+   font-size: 24px
+   line-height: 30px
+   margin: 0
+   padding-bottom 12px
+.month-data_box
+ padding 10px 0 30px
+ .month-data_item
+  box-shadow none
+  border 1px solid #eee
+  .month-data_item__body
+   padding 15px
+   p
+    margin-bottom 7px
+   label
+    color #333
+.text-rakuten
+ color: #7ab43f !important
+.text-jalan
+ color: #ed632b !important
+.text-purple
+ color: #441a49 !important
+.text-primary
+ color color-active !important
+.daily-sum
+ padding: 25px 0;
+ background-color: #fafafa;
+ border: 1px solid rgba(0,0,0,0.12);
+ border-radius: 3px;
+ .v-card
+  background-color transparent
+ .basic-list-headerInfo
+  position: relative;
+  text-align: center;
+  span
+   display: inline-block;
+   margin-bottom: 4px;
+   color: rgba(0, 0, 0, 0.45);
+   font-size: 16px;
+   line-height: 24px;
+   i
+    font-size 20px
+  p
+   color: rgba(0, 0, 0, 0.85);
+   font-size: 36px;
+   line-height: 48px;
+   margin: 0;
+  >em
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 1px;
+   height: 100%;
+   background-color: rgba(0,0,0,.12);
+.week-data
+ .week-data_item
+  box-shadow: none;
+  border: 1px solid #eee;
+  .week-data_item__title
+   padding: 15px 20px;
+   border-bottom: 1px solid rgba(0,0,0,.12);
+   font-weight: bold;
+   background-color: #fafafa;
+  .week-data_item__body
+   padding 20px
+
+.text-center
+  text-align: center !important
+.text-bold
+  font-weight: bold !important
+.text-24
+  font-size: 24px
+.text-10
+  font-size: 10px !important
+.toolbar-respon
+ .toolbar-respon__inner
+  display flex
+  align-items center
+  padding 0 24px
+  justify-content space-between
+  .btn-tool
+   margin-right 0
+  @media (max-width: 768px)
+   padding 0 8px
+   .btn-tool
+    min-width: 56px;
+    padding: 0;
+    i
+     margin-right 0
+    span
+     display none
+.toolbar-for-table
+ .toolbar-for-table__inner
+  display flex
+  padding 0 24px
+  align-items center
+  .mate2-slc
+   margin-top 0
+   padding-top 0
+  .v-divider--vertical
+   &.v-divider--inset
+    margin-top 0
+  @media (max-width: 768px)
+   display block
+   padding 15px 8px 0
+   .v-divider--inset
+    display none
+   .mate2-slc
+    margin-bottom 10px
+    max-width 100%
+    display block
+    margin-right 0
+   .v-btn
+    margin 5px 0
+    width 100%
+   .v-menu
+    margin 5px 0
+    width 100%
+.box-review-sum
+ @media (max-width: 768px)
+  .layout
+   .flex
+    .hotel-thumb
+     float: none;
+     margin: 0 auto !important;
+    .hotel-info
+     text-align center
+.upload-avt
+ .upload-avt__left
+  width calc(100% - 140px)
+ .img-link
+  .v-input
+   margin 10px 0
+   padding-top 0
+ .upload-avt__right
+  width 120px
+  height 120px
+  padding-left 20px
+  .img-holder
+   width 120px
+   height 120px
+   background-color #f4f4f4
+   border-radius 50%
+   display flex
+   align-items center
+   text-align center
+   overflow hidden
+   .img-responsive
+    width 100%

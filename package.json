@@ -1,0 +1,44 @@
+{
+  "name": "sotetsu-spa",
+  "version": "1.0.0",
+  "description": "Sotetsu Hotels Marketing App",
+  "author": "maitungmn",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "npm run build && firebase deploy --only hosting -P sotetsu-hotel"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.4.6",
+    "@nulldreams/vue-loading": "^0.0.1",
+    "@nuxtjs/axios": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cross-env": "^5.2.0",
+    "date-fns": "^1.30.1",
+    "dateformat": "^3.0.3",
+    "file-saver": "^2.0.2",
+    "firebase": "^6.0.2",
+    "js-cookie": "^2.2.0",
+    "jwt-decode": "^2.2.0",
+    "numeral": "^2.0.6",
+    "nuxt": "^2.0.0",
+    "nuxt-material-design-icons": "^1.0.4",
+    "vue": "^2.6.10",
+    "vue-google-charts": "^0.3.2",
+    "vue-i18n": "^8.11.2",
+    "vue-scrollto": "^2.15.0",
+    "vue-tel-input": "^2.1.4",
+    "vuelidate": "^0.7.4",
+    "vuetify": "^1.2.4",
+    "vuetify-daterange-picker": "^3.1.7-beta.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

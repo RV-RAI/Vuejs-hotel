@@ -1,0 +1,135 @@
+{
+  "ja": {
+    "Rakuten KPI Column": "ja",
+    "Jalan KPI Column": "ja",
+    "Expedia KPI Column": "ja",
+    "Booking KPI Column": "ja",
+    "Agoda KPI Column": "ja"
+  },
+  "エリア": {
+    "Rakuten KPI Column": "エリア",
+    "Jalan KPI Column": "エリア",
+    "Expedia KPI Column": "エリア",
+    "Booking KPI Column": "エリア",
+    "Agoda KPI Column": "エリア"
+  },
+  "ブランド": {
+    "Rakuten KPI Column": "ブランド",
+    "Jalan KPI Column": "ブランド",
+    "Expedia KPI Column": "ブランド",
+    "Booking KPI Column": "ブランド",
+    "Agoda KPI Column": "ブランド"
+  },
+  "ホテル": {
+    "Rakuten KPI Column": "ホテル",
+    "Jalan KPI Column": "ホテル",
+    "Expedia KPI Column": "ホテル",
+    "Booking KPI Column": "ホテル",
+    "Agoda KPI Column": "ホテル"
+  },
+  "6か月先まで\n販売": {
+    "Rakuten KPI Column": "6か月先まで\n販売",
+    "Jalan KPI Column": "6か月先まで\n販売",
+    "Expedia KPI Column": "6か月先まで\n販売",
+    "Booking KPI Column": "6か月先まで\n販売",
+    "Agoda KPI Column": "6か月先まで\n販売"
+  },
+  "プラン数": {
+    "Rakuten KPI Column": "プラン数",
+    "Jalan KPI Column": "プラン数",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "朝食付\nプラン数": {
+    "Rakuten KPI Column": "朝食付\nプラン数",
+    "Jalan KPI Column": "朝食付\nプラン数",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "デイユース\nプラン数": {
+    "Rakuten KPI Column": "デイユース\nプラン数",
+    "Jalan KPI Column": "デイユース\nプラン数",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "R-mail送信回数（PC + MB）": {
+    "Rakuten KPI Column": "R-mail送信回数（PC + MB）",
+    "Jalan KPI Column": "宿ログ\n最新更新日",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "アドレス\n保有数": {
+    "Rakuten KPI Column": "アドレス\n保有数",
+    "Jalan KPI Column": "パーミッション\n数4月末\n時点",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "エリア掲載順位\n個別mtgのあるホテルのみ更新": {
+    "Rakuten KPI Column": "エリア掲載順位\n個別mtgのあるホテルのみ更新",
+    "Jalan KPI Column": "エリア\n掲載順位",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "クチコミTotal": {
+    "Rakuten KPI Column": "クチコミTotal",
+    "Jalan KPI Column": "クチコミ\n総合評価",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "PV数": {
+    "Rakuten KPI Column": "PV数",
+    "Jalan KPI Column": "\n予約件数\n",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "予約者数\n（人）": {
+    "Rakuten KPI Column": "予約者数\n（人）",
+    "Jalan KPI Column": "PV数",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "アクセス\n人数": {
+    "Rakuten KPI Column": "アクセス\n人数",
+    "Jalan KPI Column": "予約     \n 成約率",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "アクセス\n人数\n上位平均": {
+    "Rakuten KPI Column": "アクセス\n人数\n上位平均",
+    "Jalan KPI Column": "ログイン回数\n1週間合計",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "転換率": {
+    "Rakuten KPI Column": "転換率",
+    "Jalan KPI Column": "周辺観光情報登録",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "転換率 / 上位平均": {
+    "Rakuten KPI Column": "転換率 / 上位平均",
+    "Jalan KPI Column": "",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  },
+  "フォトギャラリー": {
+    "Rakuten KPI Column": "フォトギャラリー",
+    "Jalan KPI Column": "",
+    "Expedia KPI Column": "",
+    "Booking KPI Column": "",
+    "Agoda KPI Column": ""
+  }
+}

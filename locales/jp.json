@@ -1,0 +1,553 @@
+{
+  "index": {
+    "title": "Hotel Price Tracking Tool",
+    "welcome": "ELSOULへようこそ",
+    "checkPP": "価格・プランの確認",
+    "collect": {
+      "main": "ホテル価格の取得",
+      "sub": ""
+    },
+    "support": {
+      "main": "24/7サポート",
+      "sub": ""
+    },
+    "update": {
+      "main": "日次データ更新",
+      "sub": ""
+    },
+    "visualize": {
+      "main": "データの可視化",
+      "sub": ""
+    },
+    "giveRe": {
+      "main": "推奨価格の提供",
+      "sub": ""
+    },
+    "giveNo": {
+      "main": "価格変動の通知を提供",
+      "sub": ""
+    },
+    "createAcc": "アカウント登録",
+    "login": "ログイン"
+  },
+  "login": {
+    "hello": "こんにちは",
+    "welcome": "エルソウルへようこそ",
+    "signIn": "ログイン",
+    "toUse": "",
+    "email": "メールアドレス *",
+    "pw": "パスワード *",
+    "cantLogin": "",
+    "forget": "パスワードをお忘れですか?",
+    "reg": "登録"
+  },
+  "client": {
+    "review": "レビュー",
+    "request": "リクエスト",
+    "requestSend": "リクエストを送信",
+    "layout": {
+      "title": "相鉄ホテルマネジメント",
+      "dashboard": "ダッシュボード",
+      "prices": "価格チャート",
+      "priceTab": "価格テーブル",
+      "kpi": "KPIテーブル",
+      "review": "レビュー評価",
+      "minP": "最安値",
+      "maxP": "最高値",
+      "export": "データのエクスポート",
+      "priceDis": "価格分布",
+      "priceRe": "推奨価格",
+      "sub": "ホテル・オンライントラベルエージェンシー向け",
+      "hotels": "ホテル",
+      "listHot": "ホテルリスト",
+      "invoices": "インボイス",
+      "listIn": "インボイスリスト",
+      "settings": "設定",
+      "acc": "アカウント",
+      "search": "検索",
+      "pp": "価格・プラン",
+      "prof": "プロフィールアカウント",
+      "logout": "ログアウト",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "create": "システムアカウントの作成",
+      "intro": "Introduction",
+      "language": "Language: ",
+      "nation": "日本語(JP)",
+      "SRunning": "スクレーパーがデータを取得しています。",
+      "SFinished": "スクレーパーはデータの取得を完了しました。",
+      "SError": "スクレーパーを確認しています。",
+      "default": {
+        "title": "相鉄ホテルマネジメント",
+        "setting": "プロフィール設定",
+        "info": "アカウント情報",
+        "recovery": "パスワードとアカウント復旧",
+        "req": "アカウント削除リクエスト",
+        "search": "検索",
+        "pp": "価格・プラン",
+        "settings": "設定",
+        "create": "システムアカウントの作成",
+        "intro": "Introduction",
+        "prof": "プロフィールアカウント",
+        "logout": "ログアウト",
+        "back": "ダッシュボードに戻る"
+      },
+      "back": "戻る"
+    },
+    "register": {
+      "hello": "こんにちは、",
+      "nice": "あなたと仕事してうれしい",
+      "checkPP": "価格と計画を確認する",
+      "request": "会員になることを求める",
+      "explore": "私たちのプラットフォームを探検する！",
+      "email": "電子メールアドレス *",
+      "emailHint": "この項目は必須です。 文字、数字、ドットを使用できます。",
+      "num": "国番号なしの番号",
+      "org": "組織*",
+      "orgHint": "このフィールドは必須で、128文字未満でなければなりません。",
+      "orgErr": "組織は128文字未満でなければなりません。",
+      "add": "住所 *",
+      "addHint": "このフィールドは必須で、128文字未満でなければなりません。",
+      "addErr": "アドレスは128文字未満でなければなりません。",
+      "pw": "パスワード*",
+      "cfPW": "パスワードを認証する *",
+      "pwHint": "このフィールドは必須で、少なくとも8文字です。",
+      "instead": "代わりにログイン",
+      "reg": "登録",
+      "err": "パスワードが一致しません！",
+      "scs": "登録が成功しました。あなたのメールアドレスを確認してください！",
+      "required": "必須。",
+      "min8": "最小8文字",
+      "invalidEmail": "無効な電子メール。",
+      "orgReq": "組織が必要です",
+      "addReq": "アドレスは必須です"
+    },
+    "priceTable": {
+      "title": "価格テーブル",
+      "dataTab": "価格テーブル",
+      "minTab": "最安値",
+      "maxTab": "最高値",
+      "disTab": "価格分布",
+      "reTab": "推奨価格",
+      "filter": "データをフィルタリングする日付を選択",
+      "export": "データのエクスポート",
+      "maximumDays": "(最大180日間)",
+      "selectChan": "チャネルを選択",
+      "apply": "適用",
+      "hotel": "ホテル",
+      "channel": "チャネル",
+      "select": "選択",
+      "adult": "人数",
+      "roomTP": "部屋タイプ",
+      "and": "そして",
+      "bf": "朝食",
+      "toFilterData": "データをフィルタする",
+      "dn": "夕食",
+      "type": {
+        "single": "シングル",
+        "double": "ダブル",
+        "twin": "ツイン",
+        "triple": "トリプル",
+        "fourth": "クアッド",
+        "washitsu": "和室",
+        "na": "指定なし"
+      },
+      "meal": {
+        "yes": "あり",
+        "no": "なし"
+      },
+      "errorMess": {
+        "noVal": "該当するデータがありません",
+        "again": "選択し直してください"
+      }
+    },
+    "export": {
+      "export": "エクスポート",
+      "title": "最安値データをエクスポート",
+      "subTitle1": "すべてのホテルのレポートデータをダウンロードします。",
+      "180days": "(180日分)",
+      "subTitle2": "※下記設定が適用されます",
+      "adultNum": "大人人数",
+      "roomType": "ルームタイプ",
+      "bf": "朝食",
+      "exportTo": "エクスポート"
+    },
+    "hotelList": {
+      "title": "ホテルリスト",
+      "search": "検索",
+      "hint": "ex: ホテル名、チャネル、価格差を入力",
+      "searchResult": "該当なし",
+      "header": {
+        "name": "ホテル名",
+        "channel": "チャネル",
+        "adult": "最大人数",
+        "competitor": "競合",
+        "range": "価格差",
+        "action": "アクション"
+      }
+    },
+    "invoiceList": {
+      "title": "インボイスリスト",
+      "search": "検索",
+      "hint": "ex: ID、日付、金額を入力",
+      "searchResult": "該当なし",
+      "headers": {
+        "no": "No.",
+        "inDate": "宿泊開始日",
+        "dueDate": "宿泊終了日",
+        "email": "メールアドレス",
+        "phone": "電話番号",
+        "add": "住所",
+        "org": "組織",
+        "rate": "消費税率",
+        "mnt": "消費税",
+        "total": "総計",
+        "final": "最終価格",
+        "status": "支払い状況",
+        "modify": "変更日",
+        "action": "アクション"
+      }
+    },
+    "showInvoice": {
+      "title": "請求書情報",
+      "inDetail": "請求書詳細 : ",
+      "clientInfo": "お客様情報",
+      "paymentInfo": "支払い情報",
+      "phone": "電話番号: ",
+      "startDate": "宿泊開始日: ",
+      "endDate": "宿泊終了日: ",
+      "status": "請求書状況: ",
+      "pending": "未決済",
+      "paid": "支払済み",
+      "note": "補足",
+      "quote": "Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.",
+      "subTotal": "小計: ",
+      "ratingTax": "消費税率: ",
+      "mnt": "消費税: ",
+      "download": "PDFをダウンロード",
+      "print": "印刷"
+    },
+    "reqRemove": {
+      "title": "アカウント削除のリクエスト",
+      "sub": "アカウントをシステムから完全に削除します。アカウントと全データが削除されます。",
+      "btn": "削除をリクエスト"
+    },
+    "profile": {
+      "personal": {
+        "title": "プロフィール設定",
+        "pi": "アカウント情報",
+        "piSub": "名前・住所・電話番号などの企業情報はこちらで管理出来ます",
+        "email": "メールアドレス",
+        "editEmail": "メールアドレスの変更",
+        "phone": "電話番号",
+        "editPhone": "電話番号の変更",
+        "hintPhone": "国別コードなし",
+        "org": "組織",
+        "editOrg": "組織編集",
+        "add": "住所",
+        "editAdd": "住所編集",
+        "pp": "利用プラン",
+        "editPP": "利用プランの変更",
+        "cancel": "キャンセル",
+        "update": "更新"
+      },
+      "recovery": {
+        "title": "パスワードとアカウント復旧",
+        "title1": "パスワードを忘れた場合には「リクエスト」よりパスワード復旧依頼を送信してください。",
+        "subTitle": "パスワード強度を高くしてください: ",
+        "subTitle1": "パスワード強度を高くする為には英数字と記号を含んでください。",
+        "control": "ログインパスワード変更",
+        "note": "Note: ",
+        "subNote": "定期的に変更することでセキュリティを高めることができます。",
+        "pw": "パスワード",
+        "changePW": "パスワード変更",
+        "accRec": "アカウント復旧オプション",
+        "subAccRec": "パスワードを忘れた場合またはログインできない場合に下記情報を使用して復旧します。",
+        "recEmail": "復旧用メールアドレス"
+      },
+      "remove": {
+        "title": "アカウントの削除",
+        "sub1": "EL-METRIXからアカウントを削除する場合はこちらから出来ます。",
+        "sub2": "アカウントをシステムから完全に削除します。アカウントと全データが削除されます。",
+        "btn": "アカウント削除のリクエスト"
+      }
+    },
+    "help": {
+      "page1": "Page 01: Welcomeページ",
+      "page2": "Page 02: ログインページ",
+      "page3": "Page 03: アカウントの作成",
+      "page4": "Page 04: パスワードリセットのリクエスト",
+      "page5": "Page 05: 価格・プラン",
+      "page6": "Page 06: 登録完了ページ",
+      "page7": "Page 07: プロフィールページ",
+      "page7-1": "Page 07.1: パスワードの変更",
+      "page7-2": "Page 07.2: アカウント削除のリクエスト",
+      "page8": "Page 08: 価格テーブル",
+      "page9": "Page 09: 最低価格",
+      "page10": "Page 10: 最高価格",
+      "page11": "Page 11: 価格分布",
+      "page12": "Page 12: 推奨価格",
+      "page13": "Page 13: ホテルリスト",
+      "page14": "Page 14: ホテル作成",
+      "page15": "Page 15: ホテル情報",
+      "intro": "Introduction",
+      "subIntro": "Get some intro about ELPRICE in this page",
+      "1": {
+        "btnCheck": "Button Check Pricing & Plans - go to ",
+        "btnCheck1": " of ELMETRIX",
+        "btnCreate": "Button Create a New Account - go to ",
+        "btnLogin": "Button Login - go to "
+      },
+      "2": {
+        "email": "メールアドレスを入力してください",
+        "pw": "パスワードを入力してください",
+        "btnLogin": "ログインボタン - ログインしてアプリケーションにアクセス",
+        "btnForget": "パスワードを忘れたボタン - go to ",
+        "btnReg": "Button Register - go to "
+      },
+      "3": {
+        "1": "Button Check Pricing & Plans - go to ",
+        "2": "Input Email address",
+        "3": "Input Phone number",
+        "4": "Input Organization",
+        "5": "Input Address",
+        "6": "Input Password",
+        "7": "Input Password again to Confirm",
+        "8": "Button Sign In Instead - go to ",
+        "9": "Button Register - Validate all fields, if Success go to "
+      },
+      "4": {
+        "1": "Input Recovery Email to receive link reset password",
+        "2": "Button Send Reset Link -  Check whether the email exists and send link to reset password"
+      },
+      "5": {
+        "1": "Button Back To Page (or Subscription) will bring user back to the page where they clicked button Pricing & Plan - In this phase, you can subscription or change the subscription package by editing in "
+      },
+      "6": {
+        "1": "Button Back to Homepage - go to ",
+        "1-1": " if the account is logged or will move to ",
+        "1-2": " if user reset password."
+      },
+      "7": {
+        "1": "Button Back To Home will bring user back to homepage - in this phase this page if ",
+        "2": "Button Email: Click to show modal box to edit Email",
+        "3": "Button Phone: Click to show modal box to edit Phone number",
+        "4": "Button Organization: Click to show modal box to edit Organization",
+        "5": "Button Address: Click to show modal box to edit address",
+        "6": "Button Pricing plan: Click to show modal box to choose (if the first time) or change subscription package",
+        "7": "Button Change Password: Click to go to ",
+        "7-1": " to change password",
+        "8": "Button Recovery Email: Click to show modal box to edit recovery email",
+        "9": "Button Request to Remove Account: Click to go to ",
+        "9-1": " - this page will send a request to remove this account"
+      },
+      "7-1": {
+        "1": "Button Back To Profile page will bring user back to ",
+        "2": "Input Current password: Enter the current password",
+        "3": "Input New password: Enter the new password",
+        "4": "Input Confirm New password: Enter the new password again to confirm",
+        "5": "Button Change Password: Check validate and update new password"
+      },
+      "7-2": {
+        "1": "Button Back To Profile page will bring user back to ",
+        "2": "Button Request to Remove: Click button and system will send the link confirm remove account to user email."
+      },
+      "13": {
+        "1": "Button Create New: go to ",
+        "2": "Input Search: Enter the information you want to filter for the table below (ex: Hotel Name, Channel, tracking range…)",
+        "3": "Table List Hotel: This table show list hotel, Click to each line to view detail info of this hotel (will move to"
+      },
+      "14": {
+        "1": "Input Name: Enter name of Hotel",
+        "2": "Input Price Tracking Range: Enter price tracking",
+        "3": "Checkbox Adult Capacity: Check the number of adult in each room",
+        "4": "Block Channel Info: Each block contains a channel information",
+        "5": "Input URL Tracking: Enter the url to tracking this channel, after that click check button to check this link",
+        "6": "Disable Input Channel Name: This field auto generate after check link url above",
+        "7": "Table Competitors: This table show list competitor of this channel",
+        "8": "Button Add New: Click this button to show modal box to add New Competitor and Price Spread",
+        "9": "Button Remove Channel: Click this button to remove this channel",
+        "10": "Button Add More Channel: Click this button to add more channel",
+        "11": "Button Create: Click this button to Create new hotel"
+      },
+      "15": {
+        "1": "Input Name: Enter name of Hotel",
+        "2": "Input Price Tracking Range: Enter price tracking",
+        "3": "Checkbox Adult Capacity: Check the number of adult in each room",
+        "4": "Block Channel Info: Each block contains a channel information",
+        "5": "Input URL Tracking: Enter the url to tracking this channel, after that click check button to check this link",
+        "6": "Disable Input Channel Name: This field auto generate after check link url above",
+        "7": "Table Competitors: This table show list competitor of this channel",
+        "8": "Button Add New: Click this button to show modal box to add New Competitor and Price Spread",
+        "9": "Button Remove Channel: Click this button to remove this channel",
+        "10": "Button Add More Channel: Click this button to add more channel",
+        "11": "Button Update: Click this button to Update info hotel"
+      }
+    }
+  },
+  "public": {
+    "changePW": {
+      "title": "パスワード変更",
+      "hint": "半角英数字8文字以上",
+      "current": "現在のパスワード",
+      "new": "新しいパスワード",
+      "re": "新しいパスワード(確認)",
+      "btn": "変更",
+      "success": "変更完了",
+      "error": "パスワードが一致しません"
+    },
+    "pp": {
+      "title": "Pricing & Plans",
+      "sub": "Hotel price tracking tool and management for your organization",
+      "quote": "Simple project management for teams and small businesses",
+      "btn": "Back to page"
+    },
+    "subscribePage": {
+      "title": "ELMETRIXを購読する",
+      "message": "Get notified about our application news, updates and be the first get early access to the Hotel price tracking tool and management for your organization."
+    }
+  },
+  "admin": {
+    "layout": {
+      "title": "ELPRICE Admin",
+      "genAcc": "General Account",
+      "listAcc": "List Account",
+      "createAcc": "Create Account",
+      "accSettings": "Account Settings",
+      "clientAcc": "Client Account",
+      "systemAcc": "System Account",
+      "billing": "Billing",
+      "acc": "Account",
+      "back": "Back to dashboard",
+      "search": "Search",
+      "pp": "Pricing & Plan",
+      "settings": "Settings",
+      "createSysAcc": "Create system account",
+      "intro": "Introduction",
+      "prof": "Profile Account",
+      "logout": "Logout"
+    },
+    "system": {
+      "listAcc": {
+        "title": "List Account",
+        "search": "Search",
+        "hint": "ex: email, phone or role ...",
+        "filter": "Filter",
+        "state": "State",
+        "role": "Role",
+        "createFrDate": "Create from date",
+        "apply": "Apply",
+        "notFound": " not found!"
+      },
+      "reg": {
+        "title": "Create System Account",
+        "email": "Email address",
+        "phone": "Number without country code",
+        "role": "Role",
+        "create": "Create",
+        "required": "Required.",
+        "min8": "Min 8 characters",
+        "invalidEmail": "Invalid e-mail."
+      },
+      "accSettings": {
+        "title": "Account Settings",
+        "pi": "Profile Infomations",
+        "org": "Organization",
+        "phone": "Phone Number",
+        "email": "Email",
+        "role": "Role",
+        "confirm": "Confirm",
+        "locked": "Locked",
+        "scraper": "Scraper Locked",
+        "updated": "Updated at",
+        "btn": "Update",
+        "required": "Required.",
+        "min8": "Min 8 characters",
+        "invalidEmail": "Invalid e-mail.",
+        "success": "Update success!",
+        "fail": "Update fail!"
+      },
+      "invoiceList": {
+        "title": "List Invoices",
+        "search": "Search",
+        "hint": "ex: ID, date or amount ...",
+        "searchResult": " not found !",
+        "headers": {
+          "no": "No.",
+          "inDate": "Start date",
+          "dueDate": "End date",
+          "email": "Email",
+          "phone": "Phone",
+          "add": "Address",
+          "org": "Organization",
+          "rate": "Rating Tax",
+          "mnt": "Amounting Tax",
+          "total": "Total",
+          "final": "Final Price",
+          "status": "Payment Status",
+          "modify": "Modified at",
+          "action": "Action"
+        }
+      },
+      "showInvoice": {
+        "title": "Invoice Information",
+        "inDetail": "Invoice Details : ",
+        "clientInfo": "Client Info",
+        "paymentInfo": "Payment Info",
+        "phone": "Phone: ",
+        "startDate": "Start date: ",
+        "endDate": "End date: ",
+        "status": "Invoice Status: ",
+        "pending": "Pending",
+        "paid": "Paid",
+        "note": "Note",
+        "quote": "Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.",
+        "subTotal": "Sub-total: ",
+        "ratingTax": "Rating Tax: ",
+        "mnt": "Amounting Tax: ",
+        "download": "Download PDF",
+        "print": "Print"
+      },
+      "profile": {
+        "personal": {
+          "title": "Profile Settings",
+          "pi": "Your personal info",
+          "piSub": "Manage this basic information — your name, email, and phone number.",
+          "email": "Email",
+          "editEmail": "Edit Email",
+          "phone": "Phone",
+          "editPhone": "Edit Phone",
+          "hintPhone": "Number without country code",
+          "org": "Organization",
+          "editOrg": "Edit Organization",
+          "add": "Address",
+          "editAdd": "Edit Address",
+          "pp": "Pricing plan",
+          "editPP": "Edit Pricing plan",
+          "cancel": "Cancel",
+          "update": "Update"
+        },
+        "recovery": {
+          "title": "Password and Account recovery options",
+          "title1": "Control your password and account access, along with backup options if you get locked out of your account.",
+          "subTitle": "Make sure you choose a strong password: ",
+          "subTitle1": "A strong password contains a mix of numbers, letters, and symbols. It is hard to guess, does not resemble a real word, and is only used for this account.",
+          "control": "Control Password",
+          "note": "Note: ",
+          "subNote": "To change these settings, you will need to confirm your password.",
+          "pw": "Password",
+          "changePW": "Change Password",
+          "accRec": "Account recovery options",
+          "subAccRec": "If you forget your password or cannot access your account, we will use this information to help you get back in.",
+          "recEmail": "Recovery email"
+        },
+        "remove": {
+          "title": "Remove your account",
+          "sub1": "If you are no longer interested in using El-Metrix, you can delete them here.",
+          "sub2": "Your account will be consider to remove from our system. All of data will be removed, can't get back!",
+          "btn": "Request to Remove Account"
+        }
+      }
+    }
+  }
+}
